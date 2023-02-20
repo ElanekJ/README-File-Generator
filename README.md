@@ -1,20 +1,21 @@
 
   # Project title
-  skuska;
+  skuska toho;
   
   
 
 ## Table of contents
 
     -[Table of contents] (#Table-of-contents)
-    -[Installation] (#instal)
+    -[Installation] (#installation)
     -[Usage] (#usage)
     -[License] (#licence)
     -[Contributing] (#contributing)
-    -[Tests] (#test)
-    -[Questions] (#qustions)
+    -[Tests] (#tests)
+    -[Questions] (#questions)
 
-    ## Instalation
+
+## Installation
 
 
 ## Usage
