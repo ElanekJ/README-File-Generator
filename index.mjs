@@ -19,19 +19,34 @@ let {description} = await inquirer
   ${description};
   
   
-//  # Project Title
-//  Description -
-//  A brief description of what this project does and who it's for
 
+## Table of contents
 
-
-    -[Table of Contents] (#tableOfContents)
+    -[Table of contents] (#Table-of-contents)
     -[Installation] (#instal)
     -[Usage] (#usage)
     -[License] (#licence)
     -[Contributing] (#contributing)
     -[Tests] (#test)
     -[Questions] (#qustions)
+
+    
+## Instalation
+
+
+## Usage
+
+
+## Licence
+
+
+## Contributing
+
+
+## Tests
+
+
+## Questions
 `
 
 fs.writeFile("README.md", readmeText)
