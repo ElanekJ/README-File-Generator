@@ -1,6 +1,10 @@
 
-  # Skuska
-  askjlakjdfasf dafdfsadfd 
+
+  <p align="center">
+  <img src='https://img.shields.io/badge/License-Apache_2.0-blue.svg' />
+  </p>
+  # skuska
+  asdasda
   
   ## Table of contents
 
@@ -14,19 +18,19 @@
 
 
 ## Installation
-sdfsdfawer awrsefqawe r
+s
 
 ## Usage
-hyjfhgjtyu 
+s
 
 ## Licence
 [![License](https://opensource.org/licenses/Apache-2.0.txt)]
 
 ## Contributing
-h
+ss
 
 ## Tests
-h
+d
 
 ## Questions
 undefined

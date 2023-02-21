@@ -48,6 +48,10 @@ let licenseLogo = ''
  
 
   let readmeText = `
+
+  <p align="center">
+  <img src='https://img.shields.io/badge/License-Apache_2.0-blue.svg' />
+  </p>
   # ${projectTitle}
   ${description}
   
