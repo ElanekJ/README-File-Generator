@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import fs from 'fs/promises';
 import { write } from 'fs';
 let licenseLogo = ''
- let {projectTitle, description, license} = await inquirer
+ let {projectTitle, description, license, installation, usage, contributing, tests, questions} = await inquirer
   .prompt([
     
     {
@@ -13,15 +13,37 @@ let licenseLogo = ''
 {
         type: 'input',
         name: 'description',
-        message: "A brief description of what this project does and who it's for",
+        message: "A brief description of what this project does and who it's for ",
       },
 {
       type: 'list',
       name: 'license',
       message: 'What licenses you choose?',
       choices: ['Apache2.0','Boost Software','BSD 3-Clause']
-    }
+    },
 
+    {
+      type: 'input',
+      name: 'installation',
+      message: "A brief description of installation instruction ",
+    },
+
+    {
+      type: 'input',
+      name: 'usage',
+      message: "A brief description of usage",
+    },
+    {
+      type: 'input',
+      name: 'contributing',
+      message: "A brief description of contributing guidelines",
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: "A brief description of test instruction",
+    },
+   
   ])
  
 
@@ -42,21 +64,22 @@ let licenseLogo = ''
 
 
 ## Installation
-
+${installation}
 
 ## Usage
-
+${usage}
 
 ## Licence
 ${generateLicense(license)}
 
 ## Contributing
-
+${contributing}
 
 ## Tests
-
+${tests}
 
 ## Questions
+${questions}
 `
 
 fs.writeFile("README.md", readmeText)
