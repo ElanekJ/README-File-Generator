@@ -1,6 +1,6 @@
 
   # Skuska
-  testing dgahk kljljsilfjhsd oiu oiugfs
+  alkdf;lkas alskfd;laksfdksad;lf ks ;lkf;sldkf;lsk
   
   ## Table of contents
 
@@ -20,7 +20,7 @@
 
 
 ## Licence
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License](https://opensource.org/licenses/Apache-2.0)](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
 ## Contributing
 

@@ -12,7 +12,7 @@ import { write } from 'fs';
     },
 
   ])
-  
+
 let {description} = await inquirer
   .prompt([
      
@@ -76,7 +76,7 @@ ${generateLicense(license)}
 fs.writeFile("README.md", readmeText)
 function generateLicense(license){
   if(license==='Apache2.0'){
-    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    return '[![License](https://opensource.org/licenses/Apache-2.0)](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
   }
   else if(license==='Boost Software'){
     return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)'
