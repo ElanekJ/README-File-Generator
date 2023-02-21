@@ -48,10 +48,8 @@ let licenseLogo = ''
  
 
   let readmeText = `
-
-  <p align="center">
-  <img src='https://img.shields.io/badge/License-Apache_2.0-blue.svg' />
-  </p>
+${licenseLogo}
+  
   # ${projectTitle}
   ${description}
   
@@ -89,7 +87,10 @@ fs.writeFile("README.md", readmeText)
 function generateLicense(license){
   
   if(license==='Apache2.0'){
-    licenseLogo = '[!(https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
+  
+    licenseLogo = `<p align="center">
+  <img src='https://img.shields.io/badge/License-Apache_2.0-blue.svg' />
+  </p>`
     return '[![License](https://opensource.org/licenses/Apache-2.0.txt)]'
   }
   else if(license==='Boost Software'){
