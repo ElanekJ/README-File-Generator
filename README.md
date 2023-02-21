@@ -1,7 +1,6 @@
 
-  
   # Skuska
-  ahjaksf kajhreu aisfddsaljcfsl asfjklasnfl
+  askjlakjdfasf dafdfsadfd 
   
   ## Table of contents
 
@@ -10,24 +9,24 @@
     - [Usage] (#usage)
     - [License] (#licence)
     - [Contributing] (#contributing)
-    * [Tests] (#tests)
-    * [Questions] (#questions)
+    - [Tests] (#tests)
+    - [Questions] (#questions)
 
 
 ## Installation
-aaaaaaaaaaaaaaaaaaaaaaa
+sdfsdfawer awrsefqawe r
 
 ## Usage
-ssssssssssssssssssssssssssssssssssssss
+hyjfhgjtyu 
 
 ## Licence
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License](https://opensource.org/licenses/Apache-2.0.txt)]
 
 ## Contributing
-dddddddddddddddddddddddddddddddddd
+h
 
 ## Tests
-ffffffffffffffffffffffffffffffffffff
+h
 
 ## Questions
 undefined
