@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import fs from 'fs/promises';
 import { write } from 'fs';
 
- let {projectTitle} = await inquirer
+ let {projectTitle, description, license} = await inquirer
   .prompt([
     
     {
@@ -10,35 +10,20 @@ import { write } from 'fs';
       name: 'projectTitle',
       message: "Project title",
     },
-
-  ])
-
-let {description} = await inquirer
-  .prompt([
-     
-    {
+{
         type: 'input',
         name: 'description',
         message: "A brief description of what this project does and who it's for",
       },
-  ])
-
-
- 
-
-  
-let {license} = await inquirer
-  .prompt([
-
-    {
+{
       type: 'list',
       name: 'license',
       message: 'What licenses you choose?',
       choices: ['Apache2.0','Boost Software','BSD 3-Clause']
     }
-     
-  ])
 
+  ])
+ 
 
   let readmeText = `
   # ${projectTitle}
@@ -76,7 +61,7 @@ ${generateLicense(license)}
 fs.writeFile("README.md", readmeText)
 function generateLicense(license){
   if(license==='Apache2.0'){
-    return '[![License](https://opensource.org/licenses/Apache-2.0)](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
+    return 'https://opensource.org/licenses/Apache-2.0'
   }
   else if(license==='Boost Software'){
     return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)'
