@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 import fs from 'fs/promises';
 import { write } from 'fs';
-
+let licenseLogo = ''
  let {projectTitle, description, license} = await inquirer
   .prompt([
     
@@ -26,6 +26,7 @@ import { write } from 'fs';
  
 
   let readmeText = `
+  ${licenseLogo}
   # ${projectTitle}
   ${description}
   
@@ -60,7 +61,9 @@ ${generateLicense(license)}
 
 fs.writeFile("README.md", readmeText)
 function generateLicense(license){
+  
   if(license==='Apache2.0'){
+    licenseLogo = '[!(https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
     return '[!(https://opensource.org/licenses/Apache-2.0)]'
   }
   else if(license==='Boost Software'){
