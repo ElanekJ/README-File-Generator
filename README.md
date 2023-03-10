@@ -37,5 +37,5 @@ With additional questions please contact me
 
 ## Video Link
 
-![video-link](https://drive.google.com/file/d/1KNtrUG-byUGn1EaLsO5QXKzLXEJ7EQ5K/view)
+[video-link](https://drive.google.com/file/d/1KNtrUG-byUGn1EaLsO5QXKzLXEJ7EQ5K/view)
 
