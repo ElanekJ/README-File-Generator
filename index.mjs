@@ -49,17 +49,19 @@ let licenseLogo = ''
 
   let readmeText = `
   # ${projectTitle}
+
+  ## Description
   ${description}
   
   ## Table of contents
 
-    - [Table of contents] (#Table-of-contents)
-    - [Installation] (#installation)
-    - [Usage] (#usage)
-    - [License] (#licence)
-    - [Contributing] (#contributing)
-    - [Tests] (#tests)
-    - [Questions] (#questions)
+    - [Table of contents](#Table-of-contents)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#licence)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
 
 
 ## Installation
@@ -82,11 +84,13 @@ ${questions}
 `
 
 fs.writeFile("README.md", readmeText)
+
+
 function generateLicense(license){
   
   if(license==='Apache2.0'){
   
-    return '[![License]https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
   }
   else if(license==='Boost Software'){
     return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)'
