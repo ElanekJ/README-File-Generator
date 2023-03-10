@@ -33,12 +33,9 @@ When a user clicks on the links in the Table of Contents then they are taken to 
 My GitHub profile (https://github.com/ElanekJ)
 
 With additional questions please contact me 
-  email : eliasjozef01@gmail.com
+  email : eliasjozef@gmail.com
 
 ## Video Link
 
-<p>
-<img src='https://drive.google.com/file/d/1KNtrUG-byUGn1EaLsO5QXKzLXEJ7EQ5K/view' width='600' alt='npm start'>
-</p>
-
+[video-link](https://drive.google.com/file/d/1KNtrUG-byUGn1EaLsO5QXKzLXEJ7EQ5K/view)
 
