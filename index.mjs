@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import { write } from 'fs';
 
 let licenseLogo = ''
-let {projectTitle, description, license, installation, usage, contributing, tests, questions} = await inquirer
+let {projectTitle, description, license, installation, usage, contributing, tests, profile, email} = await inquirer
 
 .prompt([
     
@@ -49,6 +49,18 @@ let {projectTitle, description, license, installation, usage, contributing, test
     name: 'tests',
     message: "A brief description of test instruction",
   },
+
+  {
+    type: 'input',
+    name: 'profile',
+    message: "Your GitHub username",
+  },
+
+  {
+    type: 'input',
+    name: 'email',
+    message: "Enter your email address",
+  },
    
 ])
  
@@ -85,7 +97,11 @@ ${contributing}
 ${tests}
 
 ## Questions
-${questions}
+My GitHub profile (https://github.com/${profile})
+
+With additional questions please contact me 
+  email : ${email}
+
 `
 
 fs.writeFile("README.md", readmeText)
@@ -104,5 +120,3 @@ function generateLicense(license){
     return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
   }
 }
-
-console.log(description)
